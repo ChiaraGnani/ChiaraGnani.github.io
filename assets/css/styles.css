@@ -1,5 +1,150 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Gantari", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  width: 100%;
+  transition: all 0.3s ease;
+  color: white;
+  height: 80px;
+}
+
+/* header.shrink {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 30px;
+  font-size: 0.9rem;
+} */
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+header h4 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.section-1 {
+  position: relative;
+  height: 100vh;
+  background-image: url("../../img/istockphoto-1277552402-1024x1024.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.section-1 .text-content {
+  max-width: 500px;
+  margin-left: 50px;
+  align-self: flex-start;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-1 h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  background-image: url("../../img/DSC05369-3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 100px;
+}
+
+.presentation {
+  max-width: 600px;
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.presentation p {
+  font-size: 1.1rem;
+}
+
+.section-3 {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
