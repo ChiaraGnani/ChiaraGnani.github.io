@@ -11,6 +11,9 @@
   --color-olive: #888b75;
   --color-ruby: #d86f6f;
   --color-lemon: #efe699;
+  --color-reseda: #6b705c;
+  --color-sage: #a5a58d;
+  --color-ash-grey: #b7b7a4;
 }
 
 * {
@@ -46,7 +49,7 @@ header {
 }
 
 header.shrink {
-  background-color: rgba(41, 52, 31, 0.95);
+  background-color: var(--color-ash-grey);
   padding: 0.5rem 1.875rem;
   font-size: 0.9rem;
   height: 4.375rem;
@@ -75,7 +78,7 @@ header.shrink {
 .navbar a {
   color: var(--color-ink);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 19px;
   padding: 0.3125rem 1rem;
   transition: all 0.3s ease;
   border-radius: 1.25rem;
@@ -253,9 +256,9 @@ header.shrink {
    =============================== */
 
 .footer {
-  background-color: #2d3a1f;
+  background-color: var(--color-ash-grey);
   color: #c4bfa8;
-  padding: 1.875rem 1.25rem;
+  padding: 1rem 1.25rem;
 }
 
 .footer-content {
@@ -272,7 +275,7 @@ header.shrink {
 .verification-link {
   margin: 0;
   font-size: 0.85rem;
-  color: #f5fdc6;
+  color: var(--color-ink);
   font-weight: 400;
   transition: all 0.3s ease;
   padding: 0.375rem 0.5rem;
@@ -330,7 +333,7 @@ header.shrink {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(65, 82, 31, 0.98);
+    background-color: var(--color-ash-grey);
     flex-direction: column;
     padding: 1.25rem;
     gap: 0;
