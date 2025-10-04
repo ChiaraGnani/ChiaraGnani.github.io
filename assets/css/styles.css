@@ -211,6 +211,7 @@ header.shrink {
 .presentation h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 .presentation h2 em {
@@ -229,15 +230,22 @@ header.shrink {
 .section-3 {
   background-color: var(--color-olive);
   color: white;
-  padding: 2.5rem;
+  padding: 2.5rem 0px;
   text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .section-3 h3 {
   font-size: 1.8rem;
   font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
   max-width: 700px;
-  margin: 0 auto 20px;
+  margin: 0 auto 1rem;
 }
 
 .section-3 p {
