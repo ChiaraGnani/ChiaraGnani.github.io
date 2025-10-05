@@ -184,15 +184,14 @@ header.shrink {
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .portrait {
   background-image: url("../../img/DSC05369-3.jpg");
-  width: 280px;
-  height: 380px;
+  min-width: 280px;
+  min-height: 380px;
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
   border-bottom-left-radius: 0;
@@ -203,15 +202,20 @@ header.shrink {
   background-repeat: no-repeat;
 }
 
+.portrait-decoration {
+  background-image: url("../../img/DSC05369-3.jpg");
+}
+
 .presentation {
   max-width: 600px;
-  font-family: "Helvetica Neue", sans-serif;
+  margin-left: 2rem;
 }
 
 .presentation h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   letter-spacing: 1px;
+  font-weight: 500;
 }
 
 .presentation h2 em {
