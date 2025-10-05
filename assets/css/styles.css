@@ -178,14 +178,14 @@ header.shrink {
 }
 
 /* Section 2 - About */
-.section-2 {
+/* .section-2 {
   height: 100vh;
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 4rem 2rem;
+  padding: 4rem 5vw;
   max-width: 1200px;
+  justify-content: space-between;
 }
 
 .portrait {
@@ -224,7 +224,144 @@ header.shrink {
   font-size: 1.1rem;
   line-height: 1.8;
   color: #333;
+} */
+
+.section-2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  background: linear-gradient(135deg, #ffffff 0%, #ede8e2 100%);
+  position: relative;
+  overflow: hidden;
 }
+
+.section-2::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 40%;
+  height: 150%;
+  background: radial-gradient(circle, rgba(203, 178, 155, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.portrait-container {
+  position: relative;
+  z-index: 2;
+}
+
+.portrait-decoration {
+  position: absolute;
+  width: 380px;
+  height: 500px;
+  background: linear-gradient(145deg, #d4c4b7, #e8dfd6);
+  border-radius: 190px 190px 20px 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+.portrait {
+  width: 350px;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 175px 175px 15px 15px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.portrait:hover {
+  transform: translateY(-5px);
+}
+
+.presentation {
+  max-width: 550px;
+  z-index: 2;
+  animation: fadeInRight 0.8s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-ink);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.presentation em {
+  font-style: normal;
+  color: var(--color-rose);
+  font-weight: 600;
+  position: relative;
+}
+
+.presentation p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-ink);
+  text-align: justify;
+}
+
+.presentation p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .section-2 {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 3rem 2rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .portrait-decoration {
+    width: 320px;
+    height: 420px;
+    border-radius: 160px 160px 20px 20px;
+  }
+
+  .portrait {
+    width: 290px;
+    height: 390px;
+    border-radius: 145px 145px 15px 15px;
+  }
+
+  .presentation {
+    max-width: 100%;
+  }
+
+  .presentation h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .presentation p {
+    font-size: 1rem;
+  }
+}
+
 
 /* Section 3 - Quote/Testimonial */
 .section-3 {
