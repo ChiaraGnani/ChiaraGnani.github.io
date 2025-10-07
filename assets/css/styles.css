@@ -192,7 +192,7 @@ header.shrink {
 }
 
 .section-2::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   right: -10%;
@@ -215,8 +215,7 @@ header.shrink {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.15),
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
   z-index: 1;
 }
@@ -314,7 +313,6 @@ header.shrink {
     font-size: 1rem;
   }
 }
-
 
 /* Section 3 - Quote/Testimonial */
 .section-3 {
@@ -623,4 +621,45 @@ header.shrink {
   .section-2 {
     padding: 2.5rem 1rem;
   }
+}
+
+/****************************
+
+
+CHI SONO
+
+
+*****************************/
+
+.cs-section-1 {
+  height: 100vh;
+  background: linear-gradient(var(--color-cream) 90vh, white 0);
+  display: flex;
+  align-items: center;
+}
+
+.cs-section-2 {
+  height: 100vh;
+  background-color: white;
+}
+
+.cs-portrait {
+  width: 500px;
+  height: 300px;
+}
+
+.cs-portrait-2 {
+  width: 300px;
+  height: 500px;
+}
+
+.cs-presentation {
+  z-index: 1;
+}
+
+.cs-section-1-deco {
+  z-index: 0;
+  position: absolute;
+  height: 40vh;
+  left: -5rem;
 }
