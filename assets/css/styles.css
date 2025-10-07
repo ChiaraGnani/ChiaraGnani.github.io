@@ -661,5 +661,6 @@ CHI SONO
   z-index: 0;
   position: absolute;
   height: 40vh;
-  left: -5rem;
+  width: 40vw;
+  left: -20vw;
 }
