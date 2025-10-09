@@ -9,7 +9,7 @@ document.addEventListener("componentsLoaded", function () {
   }
 
   window.addEventListener("scroll", function () {
-    header.classList.toggle("shrink", window.scrollY > 100);
+    header.classList.toggle("shrink", window.scrollY > 1);
   });
 
   mobileMenuToggle.addEventListener("click", function () {
