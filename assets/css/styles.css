@@ -737,6 +737,9 @@ SECTION 1 CHI SONO
     flex: 0 1 auto;
     text-align: center;
   }
+  .cs-presentation h2 {
+    font-size: 30px;
+  }
 
   .cs-presentation p{
     text-align: center;
@@ -753,14 +756,16 @@ SECTION 1 CHI SONO
   .cs-section-1-deco2 {
     display: none;
   }
+
+  .cs-portrait-2 {
+    display: none;
+  }
 }
 
 /* 
 
 
-
 SECTION 2 CHI SONO
-
 
 
 */
@@ -768,9 +773,20 @@ SECTION 2 CHI SONO
 .cs-section-2 {
   height: 100vh;
   background-color: white;
+  text-align: center;
+  padding: 3rem 3rem 0;
+}
+
+.cs-section-2 p{
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-ink);
+  text-align: center;
+  line-height: 34px;
 }
 
 .cs-portrait-2 {
   width: 300px;
   height: 500px;
+  background-color: red;
 }
