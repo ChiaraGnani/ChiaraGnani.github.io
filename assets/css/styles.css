@@ -679,6 +679,7 @@ SECTION 1 CHI SONO
   color: var(--color-orange);
   font-weight: 600;
   position: relative;
+  margin-left: -5px;
 }
 
 .cs-presentation-short p {
@@ -711,8 +712,8 @@ SECTION 1 CHI SONO
 
 .cs-section-1-deco2 {
   position: absolute;
-  left: -32%;
-  bottom: -30%;
+  left: -25%;
+  bottom: -43%;
   width: 60%;
   height: auto;
   z-index: 1;
@@ -802,5 +803,5 @@ SECTION 2 CHI SONO
 .cs-portrait-2 {
   width: 300px;
   height: 500px;
-  background-color: red;
+  background-color: #945e5e;
 }
