@@ -14,6 +14,7 @@
   --color-reseda: #6b705c;
   --color-sage: #a5a58d;
   --color-ash-grey: #b7b7a4;
+  --color-orange: #cd4e01;
 }
 
 * {
@@ -657,10 +658,24 @@ SECTION 1 CHI SONO
   }
 }
 
-.cs-presentation a {
+.cs-presentation h2 {
   text-decoration: none;
   font-style: normal;
-  color: var(--color-rose);
+  position: relative;
+  color: var(--color-ink);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.cs-presentation em {
+  color: var(--color-rose) !important;
+  font-weight: 600;
+}
+
+.cs-presentation a {
+  text-decoration: underline;
+  font-style: normal;
+  color: var(--color-orange);
   font-weight: 600;
   position: relative;
 }
@@ -670,7 +685,7 @@ SECTION 1 CHI SONO
   margin-bottom: 1.2rem;
   color: var(--color-ink);
   text-align: justify;
-  line-height: 26px;
+  line-height: 34px;
 }
 
 .cs-presentation p:last-child {
