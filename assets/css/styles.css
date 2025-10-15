@@ -640,11 +640,12 @@ SECTION 1 CHI SONO
   bottom: 25vh;
 }
 
-.cs-presentation {
+.cs-presentation-short {
   max-width: 550px;
   flex: 0 1 auto;
   z-index: 2;
   animation: fadeInRight 0.8s ease-out;
+  text-align: justify;
 }
 
 @keyframes fadeInRight {
@@ -658,7 +659,7 @@ SECTION 1 CHI SONO
   }
 }
 
-.cs-presentation h2 {
+.cs-presentation-short h2 {
   text-decoration: none;
   font-style: normal;
   position: relative;
@@ -667,12 +668,12 @@ SECTION 1 CHI SONO
   margin-bottom: 1.5rem;
 }
 
-.cs-presentation em {
+.cs-presentation-short em {
   color: var(--color-rose) !important;
   font-weight: 600;
 }
 
-.cs-presentation a {
+.cs-presentation-short a {
   text-decoration: underline;
   font-style: normal;
   color: var(--color-orange);
@@ -680,15 +681,14 @@ SECTION 1 CHI SONO
   position: relative;
 }
 
-.cs-presentation p {
+.cs-presentation-short p {
   font-size: 1.25rem;
   margin-bottom: 1.2rem;
   color: var(--color-ink);
-  text-align: justify;
   line-height: 34px;
 }
 
-.cs-presentation p:last-child {
+.cs-presentation-short p:last-child {
   margin-bottom: 0;
 }
 
@@ -730,18 +730,18 @@ SECTION 1 CHI SONO
     display: none;
   }
 
-  .cs-presentation {
+  .cs-presentation-short {
     padding: 3rem 3rem 0;
     order: 1;
     max-width: 100%;
     flex: 0 1 auto;
     text-align: center;
   }
-  .cs-presentation h2 {
+  .cs-presentation-short h2 {
     font-size: 30px;
   }
 
-  .cs-presentation p{
+  .cs-presentation-short p{
     text-align: center;
   }
 
@@ -755,6 +755,10 @@ SECTION 1 CHI SONO
 
   .cs-section-1-deco2 {
     display: none;
+  }
+
+  .cs-presentation-long {
+    text-align: center !important;
   }
 
   .cs-portrait-2 {
@@ -775,13 +779,23 @@ SECTION 2 CHI SONO
   background-color: white;
   text-align: center;
   padding: 3rem 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cs-presentation-long {
+  text-align: justify;
+  max-width: 550px;
+  flex: 0 1 auto;
+  z-index: 2;
+  animation: fadeInRight 0.8s ease-out;
 }
 
 .cs-section-2 p{
   font-size: 1.25rem;
   margin-bottom: 1.2rem;
   color: var(--color-ink);
-  text-align: center;
   line-height: 34px;
 }
 
