@@ -666,6 +666,7 @@ SECTION 1 CHI SONO
   color: var(--color-ink);
   font-weight: 400;
   margin-bottom: 1.5rem;
+  font-size: 31px;
 }
 
 .cs-presentation-short em {
@@ -676,7 +677,7 @@ SECTION 1 CHI SONO
 .cs-presentation-short a {
   text-decoration: underline;
   font-style: normal;
-  color: var(--color-orange);
+  color: #989c58;
   font-weight: 600;
   position: relative;
   margin-left: -5px;
@@ -707,7 +708,7 @@ SECTION 1 CHI SONO
   display: block;
   z-index: 2;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .cs-section-1-deco2 {
@@ -804,4 +805,5 @@ SECTION 2 CHI SONO
   width: 300px;
   height: 500px;
   background-color: #945e5e;
+  border-radius: 10px;
 }
