@@ -160,7 +160,7 @@ header.shrink {
 }
 
 .section-1 p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 
@@ -194,7 +194,55 @@ header.shrink {
 
 .portrait-container {
   position: relative;
-  z-index: 2;
+  display: inline-block;
+}
+
+.portrait-container::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-image: url("../../img/home-deco1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -120px;
+  left: -60px;
+  animation: floatFlipped 4s ease-in-out infinite;
+}
+
+@keyframes floatFlipped {
+  0%,
+  100% {
+    transform: scaleX(-1) translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: scaleX(-1) translateY(-6px) rotate(2deg);
+  }
+}
+
+.portrait-container::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-image: url("../../img/home-deco1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 440px;
+  left: 230px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(182deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(184deg);
+  }
 }
 
 .portrait {
@@ -206,6 +254,15 @@ header.shrink {
   z-index: 2;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+}
+
+.portrait-decoration {
+  z-index: 1;
+  position: absolute;
+  height: 35vh;
+  width: auto;
+  left: 0;
+  bottom: 25vh;
 }
 
 .portrait:hover {
@@ -245,7 +302,7 @@ header.shrink {
 }
 
 .presentation p {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   margin-bottom: 1.2rem;
   color: var(--color-ink);
   text-align: justify;
@@ -265,12 +322,6 @@ header.shrink {
     min-height: 100vh;
   }
 
-  .portrait-decoration {
-    width: 320px;
-    height: 420px;
-    border-radius: 160px 160px 20px 20px;
-  }
-
   .portrait {
     width: 290px;
     height: 390px;
@@ -288,6 +339,22 @@ header.shrink {
 
   .presentation p {
     font-size: 1rem;
+  }
+
+  .portrait-container::before {
+    top: -70px;
+    left: -75px;
+    width: 50%;
+  }
+
+  .portrait-container::after {
+    top: 340px;
+    left: 215px;
+    width: 45%;
+  }
+
+  .section-3 h3 {
+    padding: 0 1rem;
   }
 }
 
@@ -479,6 +546,18 @@ header.shrink {
     margin-bottom: 2.5rem;
   }
 
+  .portrait-container::before {
+    top: -50px;
+    left: -50px;
+    width: 40%;
+  }
+
+  .portrait-container::after {
+    top: 230px;
+    left: 225px;
+    width: 30%;
+  }
+
   .presentation {
     max-width: 100%;
   }
@@ -538,6 +617,18 @@ header.shrink {
 
   .section-1 p {
     font-size: 1rem;
+  }
+
+  .portrait-container::before {
+    top: -30px;
+    left: -40px;
+    width: 40%;
+  }
+
+  .portrait-container::after {
+    top: 175px;
+    left: 160px;
+    width: 35%;
   }
 
   .portrait {
@@ -743,7 +834,7 @@ SECTION 1 CHI SONO
     font-size: 30px;
   }
 
-  .cs-presentation-short p{
+  .cs-presentation-short p {
     text-align: center;
   }
 
@@ -794,7 +885,7 @@ SECTION 2 CHI SONO
   animation: fadeInRight 0.8s ease-out;
 }
 
-.cs-section-2 p{
+.cs-section-2 p {
   font-size: 1.25rem;
   margin-bottom: 1.2rem;
   color: var(--color-ink);
