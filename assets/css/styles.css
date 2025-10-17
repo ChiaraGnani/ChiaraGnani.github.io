@@ -154,10 +154,6 @@ header.shrink {
   object-position: center;
   right: 0;
  }
- 
-.hero-ph-mobile {
-  display: none;
-}
 
 .section-1 .text-content {
   position: relative;
@@ -344,11 +340,12 @@ header.shrink {
   }
 
  .section-1 .text-content {
-    margin-left: 0;
+    margin: 0;
   }
 
   .section-1 {
     align-items: center;
+    height: 50vh;
   }
 
   .section-2 {
