@@ -135,21 +135,35 @@ header.shrink {
 .section-1 {
   position: relative;
   height: 100vh;
-  background-color: var(--color-cream);
   color: var(--color-ink);
+  background-color: var(--color-cream);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 1.25rem;
   padding-top: 6.25rem;
+  overflow: hidden; 
+}
+
+.hero-ph-main {
+  width: 50%;
+  height: calc(100% - 80px);
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  right: 0;
+ }
+ 
+.hero-ph-mobile {
+  display: none;
 }
 
 .section-1 .text-content {
+  position: relative;
+  z-index: 2;
   max-width: 31.25rem;
   margin-left: 3.125rem;
-  align-self: flex-start;
-  position: absolute;
   text-align: center;
 }
 
@@ -224,10 +238,10 @@ header.shrink {
 @keyframes floatFlipped {
   0%,
   100% {
-    transform: scaleX(-1) translateY(0px) rotate(0deg);
+    transform: scaleX(-1) translateY(0px) rotate(10deg);
   }
   50% {
-    transform: scaleX(-1) translateY(-6px) rotate(2deg);
+    transform: scaleX(-1) translateY(-6px) rotate(8deg);
   }
 }
 
@@ -240,8 +254,8 @@ header.shrink {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  top: 440px;
-  left: 230px;
+  top: 434px;
+  left: 216px;
   animation: float 4s ease-in-out infinite;
 }
 
@@ -255,10 +269,10 @@ header.shrink {
   }
 }
 
-.portrait {
-  width: 350px;
-  height: 470px;
-  object-fit: cover;
+.portrait {    
+  width: 309px;
+  height: 465px;
+  object-fit: contain;
   border-radius: 175px 175px 15px 15px;
   position: relative;
   z-index: 2;
@@ -324,6 +338,15 @@ header.shrink {
 }
 
 @media (max-width: 1024px) {
+
+  .hero-ph-main  {
+    display: none;
+  }
+  
+  .section-1 {
+    align-items: center;
+  }
+
   .section-2 {
     flex-direction: column;
     gap: 2.5rem;
@@ -333,8 +356,8 @@ header.shrink {
   }
 
   .portrait {
-    width: 290px;
-    height: 390px;
+    width: 259px;
+    height: 389px;
     border-radius: 145px 145px 15px 15px;
   }
 
@@ -352,14 +375,14 @@ header.shrink {
   }
 
   .portrait-container::before {
-    top: -70px;
-    left: -75px;
+    top: -56px;
+    left: -81px;
     width: 50%;
   }
 
   .portrait-container::after {
-    top: 340px;
-    left: 215px;
+    top: 354px;
+    left: 188px;
     width: 45%;
   }
 
@@ -550,8 +573,8 @@ header.shrink {
   }
 
   .portrait {
-    width: 17.5rem;
-    height: 17.5rem;
+    width: 203px;
+    height: 305px;
     margin-right: 0;
     margin-bottom: 2.5rem;
   }
@@ -563,9 +586,9 @@ header.shrink {
   }
 
   .portrait-container::after {
-    top: 230px;
-    left: 225px;
-    width: 30%;
+    top: 260px;
+    left: 155px;
+    width: 40%;
   }
 
   .presentation {
@@ -630,20 +653,20 @@ header.shrink {
   }
 
   .portrait-container::before {
-    top: -30px;
+    top: -49px;
     left: -40px;
     width: 40%;
   }
 
   .portrait-container::after {
-    top: 175px;
-    left: 160px;
+    top: 205px;
+    left: 130px;
     width: 35%;
   }
 
   .portrait {
-    width: 13.75rem;
-    height: 13.75rem;
+    width: 10.5rem;
+    height: 15.75rem;
   }
 
   .presentation h2 {
@@ -692,8 +715,20 @@ header.shrink {
   }
 
   .portrait {
-    width: 12.5rem;
-    height: 12.5rem;
+    width: 147px;
+    height: 220px;
+  }
+  
+  .portrait-container::after {
+    top: 185px;
+    left: 115px;
+    width: 35%;
+  }
+
+  .portrait-container::before {
+    top: -49px;
+    left: -35px;
+    width: 40%;
   }
 
   .section-2 {
