@@ -1168,7 +1168,7 @@ SECTION 2 CHI SONO
 .dco-section-2 {
   background-color: var(--color-cream);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
   padding: 2rem 4rem;
@@ -1184,7 +1184,7 @@ SECTION 2 CHI SONO
 
 .card {
   background: linear-gradient(135deg, #f8f6fb 0%, #ffffff 100%);
-  padding: 40px 30px;
+  padding: 1rem;
   border-radius: 16px;
   border: 2px solid #e8e3f0;
   position: relative;
@@ -1209,12 +1209,13 @@ SECTION 2 CHI SONO
   padding: 0.75rem;
 }
 
-.card p {
+.card li {
   color: var(--color-ink);
   line-height: 1.8;
   font-size: 1.2rem;
   position: relative;
   z-index: 1;
+  margin-left: 1rem;
 }
 
 .dco-section-3 {
