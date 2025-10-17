@@ -14,12 +14,15 @@ document.addEventListener("componentsLoaded", function () {
 
   mobileMenuToggle.addEventListener("click", function () {
     navbar.classList.toggle("active");
+    if (!header.classList.contains("shrink") || window.scrollY <= 1) {
+      header.classList.toggle("shrink");
+    }
 
     const spans = mobileMenuToggle.querySelectorAll("span");
     if (navbar.classList.contains("active")) {
-      spans[0].style.transform = "rotate(45deg) translate(5px, 5px)";
+      spans[0].style.transform = "rotate(45deg) translate(6.5px, 6.5px)";
       spans[1].style.opacity = "0";
-      spans[2].style.transform = "rotate(-45deg) translate(7px, -6px)";
+      spans[2].style.transform = "rotate(-45deg) translate(6.5px, -6.5px)";
     } else {
       spans[0].style.transform = "none";
       spans[1].style.opacity = "1";

@@ -98,10 +98,10 @@ header.shrink {
 }
 
 .mobile-menu-toggle span {
-  width: 1.5625rem;
-  height: 0.1875rem;
-  background-color: white;
-  margin: 0.1875rem 0;
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-ink);
+  margin: 3px 0;
   transition: 0.3s;
   border-radius: 0.125rem;
 }
@@ -190,6 +190,16 @@ header.shrink {
   background: linear-gradient(135deg, #ffffff 0%, #ede8e2 100%);
   position: relative;
   overflow: hidden;
+}
+
+.home-deco2 {
+  position: absolute;
+  top: calc(100vh - 187px);
+  right: 0;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+  transform: scaleY(-1);
 }
 
 .portrait-container {
@@ -729,6 +739,7 @@ SECTION 1 CHI SONO
   width: 35vw;
   left: -17vw;
   bottom: 25vh;
+  animation: float 30s linear infinite;
 }
 
 .cs-presentation-short {
@@ -809,6 +820,16 @@ SECTION 1 CHI SONO
   width: 60%;
   height: auto;
   z-index: 1;
+  animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -897,4 +918,317 @@ SECTION 2 CHI SONO
   height: 500px;
   background-color: #945e5e;
   border-radius: 10px;
+}
+
+/****************************
+
+
+          CONTATTI
+
+
+*****************************/
+
+.contacts-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+}
+
+.contacts-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-item:hover {
+  background-color: rgba(140, 140, 110, 0.05);
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  stroke: var(--color-olive);
+  fill: none;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-info {
+  min-width: 0;
+  flex: 1;
+  max-width: max-content;
+}
+
+.contact-info a {
+  color: var(--color-ink);
+  font-size: clamp(0.9rem, 1.25rem, 1.25rem);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  max-width: 100%;
+}
+
+.contact-info a:hover {
+  border-bottom-color: var(--color-ink);
+}
+
+.contacts-response {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contacts-closing {
+  text-align: center;
+  font-style: italic;
+  color: var(--color-olive);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+    padding: 10px;
+    gap: 9px;
+  }
+
+  .contact-icon {
+    width: clamp(24px, 28px, 32px);
+    height: clamp(24px, 28px, 32px);
+  }
+
+  .contact-info a {
+    font-size: min(4.4vw, 1.25rem);
+  }
+}
+
+/****************************
+
+
+        DI COSA MI OCCUPO
+
+
+*****************************/
+
+.dco-section-1,
+.dco-section-2,
+.dco-section-3 {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.dco-section-1 {
+  background: linear-gradient(160deg, #ffffff 0%, #b7b7a4 110%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  padding-top: 80px; /* header */
+  padding-left: max(2rem, 10vw);
+  position: relative;
+}
+
+.zigzag-layout .text-block {
+  max-width: 600px;
+  padding: 30px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.zigzag-layout .text-block:nth-child(2) {
+  margin-left: auto;
+}
+
+.zigzag-layout .text-block:nth-child(3) {
+  margin-left: 0;
+}
+
+.zigzag-layout .text-block::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-olive), var(--color-reseda));
+  top: 0;
+}
+
+.zigzag-layout .text-block:nth-child(odd)::before {
+  left: 30px;
+}
+
+.zigzag-layout .text-block:nth-child(even)::before {
+  right: 30px;
+}
+
+.zigzag-layout p {
+  color: var(--color-ink);
+  line-height: 1.8;
+  font-size: 1.25em;
+}
+
+.dco-image-container {
+  width: 50%;
+}
+
+.dco-deco1 {
+  width: 50%;
+  animation: rotate 30s infinite;
+}
+
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-bottom {
+  bottom: 0;
+}
+
+.wave-top {
+  bottom: -50px;
+  transform: scaleY(-1);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.dco-section-2 {
+  background-color: var(--color-cream);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  padding-left: max(2rem, 10vw);
+  position: relative;
+}
+
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: linear-gradient(135deg, #f8f6fb 0%, #ffffff 100%);
+  padding: 40px 30px;
+  border-radius: 16px;
+  border: 2px solid #e8e3f0;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(124, 111, 159, 0.15);
+}
+
+.card-icon {
+  background: linear-gradient(135deg, var(--color-rose), var(--color-ruby));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+.card p {
+  color: var(--color-ink);
+  line-height: 1.8;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.dco-section-3 {
+  background: linear-gradient(45deg, #ffffff 0%, #b7b7a4 125%);
+}
+
+@media (max-width: 768px) {
+  .dco-section-1,
+  .dco-section-2 {
+    padding: 1.5rem;
+    padding-top: 100px;
+    gap: 2rem;
+    min-height: auto;
+  }
+
+  .zigzag-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .zigzag-layout .text-block {
+    margin-left: 0 !important;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+
+  .zigzag-layout p {
+    font-size: 1.1em;
+  }
+
+  .card-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  .card-icon {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .wave svg {
+    height: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dco-image-container {
+    display: none;
+  }
 }
