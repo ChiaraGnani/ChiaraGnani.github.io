@@ -474,6 +474,25 @@ header.shrink {
   text-decoration: none;
 }
 
+.right-column {
+  font-size: 0.85rem;
+  color: var(--color-ink);
+  font-weight: 400;
+}
+
+.right-column p {
+  margin-bottom: 5px;
+}
+
+.right-column li {
+  margin-bottom: 2px;
+}
+
+.right-column li a {
+  text-decoration: none;
+  color: var(--color-ink);
+}
+
 .author:hover,
 .verification-link:hover {
   color: #ffffff;
