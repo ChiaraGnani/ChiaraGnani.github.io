@@ -344,7 +344,7 @@ header.shrink {
 
   .section-1 {
     align-items: center;
-    height: 50vh;
+    height: 40vh;
   }
 
   .section-2 {
@@ -552,7 +552,8 @@ header.shrink {
     margin-left: 0;
     max-width: 100%;
     text-align: center;
-    margin-top: 3.125rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .section-1 h1 {
@@ -1202,6 +1203,17 @@ SECTION 2 CHI SONO
 .wave-top {
   bottom: -50px;
   transform: scaleY(-1);
+}
+
+.wave-top-top {
+  top: 0;
+  transform: scaleY(-1);
+}
+
+@media (min-width: 1024px) {
+  .wave-top-top {
+    display: none;
+  }
 }
 
 .wave svg {
