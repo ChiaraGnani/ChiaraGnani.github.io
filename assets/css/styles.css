@@ -212,6 +212,23 @@ header.shrink {
   transform: scaleY(-1);
 }
 
+.home-deco3 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 35vw;
+  height: auto;
+  transform: scaleY(1);
+  rotate: 50deg;
+}
+
+@media (min-width: 1024px) {
+  .home-deco3 {
+    width: 15vw;
+    top: 30vh;
+  }
+}
+
 .portrait-container {
   position: relative;
   display: inline-block;
@@ -1141,19 +1158,15 @@ SECTION 2 CHI SONO
   position: relative;
 }
 
+.zigzag-layout {
+  margin-top: 35px;
+}
+
 .zigzag-layout .text-block {
   max-width: 600px;
   padding: 30px;
   margin-bottom: 50px;
   position: relative;
-}
-
-.zigzag-layout .text-block:nth-child(2) {
-  margin-left: auto;
-}
-
-.zigzag-layout .text-block:nth-child(3) {
-  margin-left: 0;
 }
 
 .zigzag-layout .text-block::before {
@@ -1181,11 +1194,15 @@ SECTION 2 CHI SONO
 
 .dco-image-container {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.dco-deco1 {
-  width: 50%;
-  animation: rotate 30s infinite;
+.dco-image {
+  width: 55vh;
+  margin-left: 2rem;
+  border-radius: 10px;
 }
 
 .wave {

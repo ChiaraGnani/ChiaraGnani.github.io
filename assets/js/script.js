@@ -8,6 +8,12 @@ document.addEventListener("componentsLoaded", function () {
     return;
   }
 
+  window.addEventListener("pageshow", () => {
+    if (!header.classList.contains("shrink") || window.scrollY <= 1) {
+      header.classList.toggle("shrink", window.scrollY > 1);
+    }
+  });
+
   window.addEventListener("scroll", function () {
     header.classList.toggle("shrink", window.scrollY > 1);
   });
