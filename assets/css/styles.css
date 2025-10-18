@@ -239,7 +239,7 @@ header.shrink {
   position: absolute;
   width: 50%;
   height: 50%;
-  background-image: url("../../img/home-deco1.svg");
+  background-image: url("../../img/home/home-deco1.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,7 +263,7 @@ header.shrink {
   position: absolute;
   width: 50%;
   height: 50%;
-  background-image: url("../../img/home-deco1.svg");
+  background-image: url("../../img/home/home-deco1.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -361,7 +361,7 @@ header.shrink {
 
   .section-1 {
     align-items: center;
-    height: 40vh;
+    height: auto;
   }
 
   .section-2 {
@@ -491,6 +491,12 @@ header.shrink {
 .right-column li a {
   text-decoration: none;
   color: var(--color-ink);
+}
+
+.right-column li a:hover {
+  color: #ffffff;
+  background-color: rgba(245, 253, 198, 0.15);
+  transform: translateY(-0.0625rem);
 }
 
 .author:hover,
@@ -1220,7 +1226,7 @@ SECTION 2 CHI SONO
 
 .dco-image {
   width: 55vh;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   border-radius: 10px;
 }
 
