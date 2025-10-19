@@ -273,11 +273,11 @@ header.shrink {
 }
 
 .fade-in-section:nth-child(even) {
-  transform: translateX(30px);
+  transform: translateX(20px);
 }
 
 .fade-in-section:nth-child(odd) {
-  transform: translateX(-30px);
+  transform: translateX(-20px);
 }
 
 .fade-in-section.fade-in-visible {
@@ -402,5 +402,13 @@ header.shrink {
 
   header h1 {
     font-size: 1.2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
