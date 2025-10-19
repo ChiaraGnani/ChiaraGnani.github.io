@@ -1,0 +1,391 @@
+/* ===============================
+   HOME PAGE STYLES
+   =============================== */
+
+/* Section 1 - Hero */
+.section-1 {
+  position: relative;
+  height: 100vh;
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.25rem;
+  padding-top: 6.25rem;
+  overflow: hidden;
+}
+
+.hero-ph-main {
+  width: 50%;
+  height: calc(100% - 80px);
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  right: 0;
+}
+
+.section-1 .text-content {
+  position: relative;
+  z-index: 2;
+  max-width: 31.25rem;
+  margin-left: 3.125rem;
+  text-align: center;
+}
+
+.section-1 h1 {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+.section-1 p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.section-1 .cta-container {
+  display: flex;
+}
+
+.section-1 .cta {
+  margin: 1rem auto 0;
+  padding: 0.35rem 1rem;
+  background-color: var(--color-ruby);
+  color: var(--color-cream);
+  border-radius: 1.25rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Section 2 - About */
+.section-2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  padding: 2rem 4rem;
+  background: linear-gradient(135deg, #ffffff 0%, #ede8e2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-deco2 {
+  position: absolute;
+  top: calc(100vh - 187px);
+  right: 0;
+  width: 200px;
+  height: auto;
+  z-index: 1;
+  transform: scaleY(-1);
+}
+
+.home-deco3 {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 35vw;
+  height: auto;
+  transform: scaleY(1);
+  rotate: 50deg;
+}
+
+@media (min-width: 1024px) {
+  .home-deco3 {
+    width: 15vw;
+    top: 30vh;
+  }
+}
+
+.portrait-container {
+  position: relative;
+  display: inline-block;
+}
+
+.portrait-container::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-image: url("../../img/home/home-deco1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -120px;
+  left: -60px;
+  animation: floatFlipped 4s ease-in-out infinite;
+}
+
+.portrait-container::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-image: url("../../img/home/home-deco1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 434px;
+  left: 216px;
+  animation: float 4s ease-in-out infinite;
+}
+
+.portrait {
+  width: 309px;
+  height: 465px;
+  object-fit: contain;
+  border-radius: 175px 175px 15px 15px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.portrait:hover {
+  transform: translateY(-3px);
+}
+
+.presentation {
+  max-width: 550px;
+  z-index: 2;
+  animation: fadeInRight 0.8s ease-out;
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-ink);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.presentation em {
+  font-style: normal;
+  color: var(--color-rose);
+  font-weight: 600;
+  position: relative;
+}
+
+.presentation p {
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-ink);
+  text-align: justify;
+  line-height: 26px;
+}
+
+.presentation p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section 3 - Quote/Testimonial */
+.section-3 {
+  background-color: var(--color-olive);
+  color: white;
+  padding: 2.5rem 0;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.section-3 h3 {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 200;
+  letter-spacing: 1px;
+  max-width: 700px;
+  margin: 0 auto 1rem;
+}
+
+.section-3 p {
+  font-size: 1.1rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* ===============================
+   RESPONSIVE STYLES - HOME
+   =============================== */
+
+@media (max-width: 1024px) {
+  .hero-ph-main {
+    display: none;
+  }
+
+  .section-1 .text-content {
+    margin: 0;
+  }
+
+  .section-1 {
+    align-items: center;
+    height: auto;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 3rem 2rem;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .portrait {
+    width: 312px;
+    height: 375px;
+    border-radius: 145px 145px 15px 15px;
+  }
+
+  .presentation {
+    max-width: 100%;
+  }
+
+  .presentation h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .portrait-container::before {
+    top: -88px;
+    left: -81px;
+    width: 50%;
+  }
+
+  .portrait-container::after {
+    top: 354px;
+    left: 227px;
+    width: 45%;
+  }
+
+  .section-3 h3 {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-1 {
+    padding: 1.25rem;
+    padding-top: 5rem;
+  }
+
+  .section-1 .text-content {
+    position: static;
+    transform: none;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .section-1 h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .section-2 {
+    flex-direction: column;
+    padding: 3.75rem 1.25rem;
+    text-align: center;
+    min-height: auto;
+  }
+
+  .portrait {
+    width: 300px;
+    height: 361px;
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .portrait-container::before {
+    top: -87px;
+    left: -56px;
+    width: 40%;
+  }
+
+  .portrait-container::after {
+    top: 329px;
+    left: 219px;
+    width: 40%;
+  }
+
+  .presentation {
+    max-width: 100%;
+  }
+
+  .presentation h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .presentation p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-1 h1 {
+    font-size: 1.8rem;
+  }
+
+  .portrait-container::before {
+    top: -85px;
+    left: -50px;
+    width: 40%;
+  }
+
+  .portrait-container::after {
+    top: 315px;
+    left: 220px;
+    width: 35%;
+  }
+
+  .portrait {
+    width: 293px;
+    height: 352px;
+  }
+
+  .presentation h2 {
+    font-size: 1.7rem;
+  }
+
+  .presentation p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-1 {
+    padding: 1rem;
+  }
+
+  .section-1 h1 {
+    font-size: 1.6rem;
+  }
+
+  .portrait {
+    width: 184px;
+    height: 221px;
+  }
+
+  .portrait-container::after {
+    top: 194px;
+    left: 137px;
+    width: 35%;
+  }
+
+  .portrait-container::before {
+    top: -49px;
+    left: -35px;
+    width: 40%;
+  }
+
+  .section-2 {
+    padding: 2.5rem 1rem;
+  }
+}

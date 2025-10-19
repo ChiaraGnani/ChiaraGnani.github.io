@@ -1,0 +1,129 @@
+/* ===============================
+   ESPERIENZE PAGE STYLES
+   =============================== */
+
+.esp-container {
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+  margin-top: 80px;
+  padding-top: 30px;
+}
+
+.esp-card {
+  background: rgba(250, 247, 240, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(139, 157, 131, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.esp-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  stroke: var(--color-olive);
+  fill: none;
+  stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.esp-link-btn:hover .esp-icon {
+  stroke: white;
+}
+
+.esp-card-title {
+  color: #4a5d47;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.esp-card-text {
+  color: #5a6b57;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.esp-quote {
+  background: rgba(139, 157, 131, 0.15);
+  border-left: 4px solid #9b4d5c;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  font-style: italic;
+  color: #5a6b57;
+}
+
+.esp-quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4a5d47;
+}
+
+.esp-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.esp-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: rgba(139, 157, 131, 0.2);
+  color: #4a5d47;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid rgba(139, 157, 131, 0.3);
+}
+
+.esp-link-btn:hover {
+  background: #9b4d5c;
+  color: #faf7f0;
+  border-color: #9b4d5c;
+  transform: translateX(5px);
+}
+
+.esp-image-placeholder {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #8b9d83 0%, #a8b89f 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #faf7f0;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   RESPONSIVE STYLES - ESPERIENZE
+   =============================== */
+
+@media (max-width: 768px) {
+  .esp-container {
+    padding: 1rem;
+  }
+
+  .esp-card {
+    padding: 1.5rem;
+  }
+
+  .esp-links {
+    flex-direction: column;
+  }
+}
