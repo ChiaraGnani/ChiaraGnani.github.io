@@ -1418,7 +1418,7 @@ SECTION 2 CHI SONO
 
 .pricing-description {
   color: #fdfcf8;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   flex: 1;
   min-width: 200px;
 }
@@ -1447,6 +1447,10 @@ SECTION 2 CHI SONO
 }
 
 @media (max-width: 768px) {
+  .dco-section-3 {
+    padding: 4rem 10px !important;
+  }
+
   .pricing-section {
     padding: 40px 25px;
   }
@@ -1471,8 +1475,8 @@ SECTION 2 CHI SONO
   }
 
   .pricing-content {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     gap: 15px;
   }
 
@@ -1493,7 +1497,7 @@ SECTION 2 CHI SONO
 
 @media (max-width: 480px) {
   .pricing-section {
-    padding: 30px 20px;
+    padding: 0 !important;
   }
 
   .pricing-title {
@@ -1505,8 +1509,8 @@ SECTION 2 CHI SONO
   }
 
   .pricing-amount {
-    font-size: 1.35rem;
-    padding: 8px 15px;
+    font-size: 1.15rem;
+    padding: 6px 10px;
   }
 }
 
