@@ -173,8 +173,8 @@
   font-size: 1.25rem;
   margin-bottom: 1.2rem;
   color: var(--color-ink);
-  text-align: justify;
   line-height: 26px;
+  text-align: center;
 }
 
 .presentation p:last-child {
