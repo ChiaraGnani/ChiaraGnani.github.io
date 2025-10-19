@@ -1329,6 +1329,189 @@ SECTION 2 CHI SONO
 
 .dco-section-3 {
   background: linear-gradient(45deg, #ffffff 0%, #b7b7a4 125%);
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-section {
+  max-width: 900px;
+  width: 100%;
+  padding: 60px 40px;
+}
+
+.intro-text {
+  color: #5a5d4f;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-title {
+  color: var(--color-reseda);
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.pricing-subtitle {
+  color: var(--color-caramel);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-item {
+  background: linear-gradient(135deg, #888b75 0%, #9fa291 100%);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(136, 139, 117, 0.2);
+}
+
+.pricing-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(136, 139, 117, 0.3);
+  background: linear-gradient(135deg, #9fa291 0%, #888b75 100%);
+}
+
+.pricing-item::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23fdfcf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5"/><path d="M12 7.5V9"/><path d="M7.5 12H9"/><path d="M16.5 12H15"/><path d="M12 16.5V15"/><path d="m8 8 1.88 1.88"/><path d="M14.12 9.88 16 8"/><path d="m8 16 1.88-1.88"/><path d="M14.12 14.12 16 16"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pricing-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-description {
+  color: #fdfcf8;
+  font-size: 1.1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.pricing-amount {
+  color: #fdfcf8;
+  font-size: 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 10px 20px;
+  background: rgba(166, 124, 124, 0.3);
+  border-radius: 10px;
+  border: 2px solid rgba(253, 252, 248, 0.3);
+}
+
+.pricing-note {
+  text-align: center;
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(166, 124, 124, 0.1);
+  border-left: 4px solid #a67c7c;
+  border-radius: 10px;
+  color: #5a5d4f;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 40px 25px;
+  }
+
+  .pricing-title {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1rem;
+    margin-bottom: 35px;
+  }
+
+  .pricing-item {
+    padding: 25px 20px;
+    gap: 15px;
+  }
+
+  .pricing-item::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pricing-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .pricing-description {
+    font-size: 1rem;
+  }
+
+  .pricing-amount {
+    font-size: 1.5rem;
+    align-self: flex-end;
+  }
+
+  .pricing-note {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  .pricing-section {
+    padding: 30px 20px;
+  }
+
+  .pricing-title {
+    font-size: 1.75rem;
+  }
+
+  .pricing-item {
+    padding: 20px 15px;
+  }
+
+  .pricing-amount {
+    font-size: 1.35rem;
+    padding: 8px 15px;
+  }
 }
 
 @media (max-width: 768px) {
