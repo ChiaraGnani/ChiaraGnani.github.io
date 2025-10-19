@@ -151,7 +151,6 @@
 .presentation {
   max-width: 550px;
   z-index: 2;
-  /* animation: fadeInRight 0.8s ease-out; */
 }
 
 .presentation h2 {
@@ -160,6 +159,7 @@
   color: var(--color-ink);
   font-weight: 400;
   line-height: 1.4;
+  text-align: center;
 }
 
 .presentation em {
