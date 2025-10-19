@@ -209,6 +209,41 @@
   opacity: 0.8;
 }
 
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-bottom {
+  bottom: 0;
+}
+
+.wave-top {
+  bottom: -50px;
+  transform: scaleY(-1);
+}
+
+.wave-top-top {
+  top: 0;
+  transform: scaleY(-1);
+}
+
+@media (min-width: 1024px) {
+  .wave-top-top {
+    display: none;
+  }
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
 /* ===============================
    RESPONSIVE STYLES - HOME
    =============================== */
