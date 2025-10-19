@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll(
-    ".section-1, .section-2, .cs-section-1, .cs-section-2, .dco-section-1, .dco-section-2, .dco-section-3, .esp-container"
+    ".dco-section-1-w, .dco-section-2-w, .dco-section-3-w"
   );
 
   const observerOptions = {

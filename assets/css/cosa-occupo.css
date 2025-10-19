@@ -118,6 +118,7 @@
   padding: 2rem 4rem;
   padding-left: max(2rem, 10vw);
   position: relative;
+  margin-top: -1px;
 }
 
 .card-layout {
