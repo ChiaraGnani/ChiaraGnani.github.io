@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="img/home/home1.webp" />
     <link rel="icon" type="image/x-icon" href="img/common/favicon.webp" />
     <title>Psicologa Chiara Gnani</title>
   </head>
@@ -65,7 +66,12 @@
             srcset="img/home/home-mobile-2.webp"
             fetchpriority="high"
           />
-          <img class="portrait" src="img/home/home2.webp" alt="portrait" />
+          <img
+            class="portrait"
+            src="img/home/home2.webp"
+            alt="portrait"
+            loading="lazy"
+          />
         </picture>
       </div>
       <div class="presentation">

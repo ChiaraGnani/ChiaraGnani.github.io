@@ -15,7 +15,10 @@ document.addEventListener("componentsLoaded", function () {
   });
 
   window.addEventListener("scroll", function () {
-    header.classList.toggle("shrink", window.scrollY > 1);
+    header.classList.toggle(
+      "shrink",
+      window.scrollY > 1 || navbar.classList.contains("active")
+    );
   });
 
   mobileMenuToggle.addEventListener("click", function () {
