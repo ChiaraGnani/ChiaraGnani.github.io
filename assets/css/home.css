@@ -32,6 +32,7 @@
   max-width: 31.25rem;
   margin-left: 3.125rem;
   text-align: center;
+  animation: fadeInRight 0.5s ease-out;
 }
 
 .section-1 h1 {
@@ -287,6 +288,11 @@
     margin-bottom: 1rem;
   }
 
+  .section-1 p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
   .section-2 {
     flex-direction: column;
     padding: 3.75rem 1.25rem;
@@ -355,7 +361,7 @@
   }
 
   .presentation p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 

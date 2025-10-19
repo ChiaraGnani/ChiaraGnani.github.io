@@ -30,7 +30,7 @@
   max-width: 550px;
   flex: 0 1 auto;
   z-index: 2;
-  animation: fadeInRight 0.8s ease-out;
+  animation: fadeInRight 0.5s ease-out;
   text-align: justify;
 }
 
@@ -203,6 +203,10 @@
     padding: 0 3rem;
     margin: 0 !important;
   }
+
+  p {
+    font-size: 1.1rem !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -218,11 +222,5 @@
     width: 80vw;
     height: auto;
     margin-left: 35vw;
-  }
-}
-
-@media (max-width: 338px) {
-  .cs-section-2 {
-    margin-top: 2vh !important;
   }
 }

@@ -44,9 +44,10 @@
 }
 
 .esp-card-text {
-  color: #5a6b57;
+  color: var(--color-ink);
   margin-bottom: 1.5rem;
-  font-size: 1.05rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
 }
 
 .esp-quote {
@@ -121,6 +122,10 @@
 
   .esp-card {
     padding: 1.5rem;
+  }
+
+  .esp-card-text {
+    font-size: 1.1rem;
   }
 
   .esp-links {
