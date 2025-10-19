@@ -1492,10 +1492,6 @@ SECTION 2 CHI SONO
 }
 
 @media (max-width: 480px) {
-  body {
-    padding: 20px 15px;
-  }
-
   .pricing-section {
     padding: 30px 20px;
   }
