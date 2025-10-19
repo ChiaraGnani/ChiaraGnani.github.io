@@ -110,6 +110,7 @@
 
 /* Section 2 */
 .dco-section-2 {
+  margin-top: -1px;
   background-color: var(--color-cream);
   display: flex;
   justify-content: center;

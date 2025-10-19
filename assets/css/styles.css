@@ -258,6 +258,17 @@ header.shrink {
   }
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
