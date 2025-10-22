@@ -32,7 +32,6 @@
   max-width: 31.25rem;
   margin-left: 3.125rem;
   text-align: center;
-  /* animation: fadeInRight 0.5s ease-out; */
 }
 
 .section-1 h1 {
@@ -58,6 +57,7 @@
   border-radius: 1.25rem;
   cursor: pointer;
   text-decoration: none;
+  font-size: 19px !important;
 }
 
 /* Section 2 - About */
@@ -141,7 +141,6 @@
   position: relative;
   z-index: 2;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-  /* transition: transform 0.3s ease; */
 }
 
 .portrait:hover {

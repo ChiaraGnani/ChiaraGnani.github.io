@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 1.875rem;
+  padding: 1.25rem;
   z-index: 1000;
   width: 100%;
   transition: all 0.3s ease;
@@ -81,7 +81,7 @@ header.shrink {
   color: var(--color-ink);
   text-decoration: none;
   font-size: 19px;
-  padding: 0.3125rem 1rem;
+  padding: 0.3125rem 0.5rem;
   transition: all 0.3s ease;
   border-radius: 1.25rem;
 }
@@ -128,7 +128,10 @@ header.shrink {
 }
 
 .contatti {
-  background-color: var(--color-rose);
+  color: white;
+  background-color: var(--color-ruby);
+  padding: 0 1rem !important;
+  align-content: center;
 }
 
 .contatti:hover {
