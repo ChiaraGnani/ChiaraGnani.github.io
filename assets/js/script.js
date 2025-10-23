@@ -1,12 +1,7 @@
-document.addEventListener("componentsLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const header = document.getElementById("header");
   const mobileMenuToggle = document.getElementById("mobileMenuToggle");
   const navbar = document.getElementById("navbar");
-
-  if (!header || !mobileMenuToggle || !navbar) {
-    console.error("Missing header elements — are components loaded correctly?");
-    return;
-  }
 
   window.addEventListener("pageshow", () => {
     if (!header.classList.contains("shrink") || window.scrollY <= 1) {

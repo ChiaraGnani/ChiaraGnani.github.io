@@ -24,13 +24,14 @@
     <meta property="og:url" content="https://www.chiaragnani.it/" />
     <meta name="theme-color" content="#888b75" />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="assets/fonts/gantari-variablefont_wght.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link rel="preload" as="image" href="img/home/home1.avif" />
 
@@ -42,8 +43,29 @@
     <title>Psicologa Chiara Gnani | Ravenna</title>
   </head>
   <body>
-    <!-- Header section will be here-->
-    <div data-include="header.html"></div>
+    <!-- HEADER -->
+    <header id="header">
+      <div>
+        <a href="/" class="title-link">
+          <img
+            src="/img/common/logo-nome-titolo.png"
+            alt="psicologa chiara gnani home"
+          />
+        </a>
+      </div>
+      <nav class="navbar" id="navbar">
+        <a href="/">Home</a>
+        <a href="/chi-sono">Chi sono</a>
+        <a href="/cosa-occupo">Di cosa mi occupo</a>
+        <a href="/esperienze">Esperienze</a>
+        <a href="/contatti" class="contatti">Contatti</a>
+      </nav>
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
 
     <!-- Section 1 -->
     <div class="section-1">
@@ -51,7 +73,6 @@
         class="hero-ph-main"
         src="img/home/home1.avif"
         alt="chiara poggia il mento sulla mano seduta alla scrivania con un computer"
-        fetchpriority="high"
       />
       <div class="text-content">
         <h1>Supporto psicologico e colloqui clinici</h1>
@@ -91,13 +112,12 @@
             class="portrait"
             media="(max-width: 1024px)"
             srcset="img/home/home-mobile-2.avif"
-            fetchpriority="high"
           />
           <img
             class="portrait"
             src="img/home/home2.avif"
             alt="primo piano di chiara sorridente all'aperto"
-            loading="lazy"
+            fetchpriority="high"
           />
         </picture>
       </div>
@@ -118,6 +138,7 @@
       </div>
     </div>
 
+    <!-- Section 3 -->
     <div class="section-3">
       <h3>
         Il vero viaggio di scoperta non consiste nel cercare nuove terre, ma
@@ -126,10 +147,52 @@
       <p>- Marcel Proust</p>
     </div>
 
-    <!-- Footer Section will be here-->
-    <div data-include="footer.html"></div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="left-column">
+          <a
+            class="verification-link"
+            href="https://www.ordinepsicologier.it/it/albo/11857a-chiara-gnani"
+            target="_blank"
+          >
+            <span class="verification-text"
+              >Iscrizione all'Albo degli Psicologi</span
+            >
+            <img
+              class="verification-icon"
+              src="/img/common/albo_psicologi_bianco.png"
+              alt="logo dell'albo degli psicologi"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davide-carita/"
+            class="author"
+            target="_blank"
+          >
+            &copy; 2025 - Davide Carità
+          </a>
+        </div>
+        <div class="right-column">
+          <p>Si ringraziano: <br /></p>
+          <ul>
+            <li>
+              <a href="https://www.albergodelcuore.it" target="_blank"
+                >L' Albergo del Cuore per gli spazi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/emmagrazianifotografie"
+                target="_blank"
+                >Emma Graziani - Fotografa</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <script defer src="../assets/js/include.js"></script>
     <script defer src="../assets/js/script.js"></script>
   </body>
 </html>

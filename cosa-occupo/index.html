@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css" />
     <link rel="stylesheet" href="../assets/css/cosa-occupo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
@@ -20,7 +14,28 @@
     <title>Psicologa Chiara Gnani | Di cosa mi occupo | Ravenna</title>
   </head>
   <body>
-    <div data-include="../header.html"></div>
+    <header id="header">
+      <div>
+        <a href="/" class="title-link">
+          <img
+            src="../img/common/logo-nome-titolo.png"
+            alt="psicologa chiara gnani home"
+          />
+        </a>
+      </div>
+      <nav class="navbar" id="navbar">
+        <a href="/">Home</a>
+        <a href="/chi-sono">Chi sono</a>
+        <a href="/cosa-occupo">Di cosa mi occupo</a>
+        <a href="/esperienze">Esperienze</a>
+        <a href="/contatti" class="contatti">Contatti</a>
+      </nav>
+      <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
 
     <div class="dco-section-1">
       <div class="wave wave-bottom wave-2">
@@ -196,9 +211,51 @@
       </div>
     </div>
 
-    <div data-include="../footer.html"></div>
+    <div class="footer">
+      <div class="footer-content">
+        <div class="left-column">
+          <a
+            class="verification-link"
+            href="https://www.ordinepsicologier.it/it/albo/11857a-chiara-gnani"
+            target="_blank"
+          >
+            <span class="verification-text"
+              >Iscrizione all'Albo degli Psicologi</span
+            >
+            <img
+              class="verification-icon"
+              src="../img/common/albo_psicologi_bianco.png"
+              alt="logo dell'albo degli psicologi"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/davide-carita/"
+            class="author"
+            target="_blank"
+          >
+            &copy; 2025 - Davide Carità
+          </a>
+        </div>
+        <div class="right-column">
+          <p>Si ringraziano: <br /></p>
+          <ul>
+            <li>
+              <a href="https://www.albergodelcuore.it" target="_blank"
+                >L' Albergo del Cuore per gli spazi</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/emmagrazianifotografie"
+                target="_blank"
+                >Emma Graziani - Fotografa</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <script defer src="../assets/js/include.js" defer></script>
     <script defer src="../assets/js/script.js"></script>
     <script defer src="../assets/js/scroll-animations.js"></script>
   </body>
